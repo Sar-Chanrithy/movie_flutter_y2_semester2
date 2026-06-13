@@ -36,10 +36,11 @@ dependencies:
     
 
   # បន្ថែម ៤ បន្ទាត់ខាងក្រោមនេះចូល៖
-  provider: ^6.1.5+1
+  provider: ^6.0.5
   flutter_secure_storage: ^10.3.1
   persistent_bottom_nav_bar_v2: ^6.3.2
   http: ^1.6.0
+  cached_network_image: ^3.4.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

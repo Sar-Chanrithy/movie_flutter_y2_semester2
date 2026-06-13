@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1234/movie_module/screens/nowplaying_screen.dart';
+import 'package:flutter_application_1234/movie_module/screens/people_screen.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 class ParentScreen extends StatefulWidget {
@@ -14,7 +16,7 @@ class _ParentScreenState extends State<ParentScreen> {
     return PersistentTabView(
       tabs: [
         PersistentTabConfig(
-          screen: Container(color: Colors.blue,),
+          screen: NowplayingScreen(),
           item: ItemConfig(
             icon: Icon(Icons.home),
             title: "Home",
@@ -22,15 +24,15 @@ class _ParentScreenState extends State<ParentScreen> {
           ),
         ),
         PersistentTabConfig(
-          screen: Container(color: Colors.lime,),
+          screen: PeopleScreen(),
           item: ItemConfig(
-            icon: Icon(Icons.search),
-            title: "Search",
+            icon: Icon(Icons.person),
+            title: "People",
             activeForegroundColor: Theme.of(context).colorScheme.primary,
           ),
         ),
         PersistentTabConfig(
-          screen: Container(color: Colors.pink,),
+          screen: Container(color: Colors.pink),
           item: ItemConfig(
             icon: Icon(Icons.settings),
             title: "Settings",
