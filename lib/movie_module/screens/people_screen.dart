@@ -97,9 +97,9 @@ class _PeopleScreenState extends State<PeopleScreen> {
                         : CachedNetworkImage(
                             imageUrl:
                                 'https://image.tmdb.org/t/p/w500/${item.profilePath}',
-                            placeholder: (_, _) =>
+                            placeholder: (context, url) =>
                                 Container(color: Colors.grey),
-                            errorWidget: (_, __, ___) =>
+                            errorWidget: (context, url, error) =>
                                 Container(color: Colors.grey.shade800),
                             width: double.maxFinite,
                             fit: BoxFit.cover,

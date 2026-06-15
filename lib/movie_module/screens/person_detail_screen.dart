@@ -87,8 +87,8 @@ class _PersonDetailScreenState extends State<PersonDetailScreen> {
             borderRadius: BorderRadius.circular(8),
             child: CachedNetworkImage(
               imageUrl: 'https://image.tmdb.org/t/p/w500/${item.profilePath}',
-              placeholder: (_, __) => Container(color: Colors.grey),
-              errorWidget: (_, __, ___) =>
+              placeholder: (context, url) => Container(color: Colors.grey),
+              errorWidget: (context, url, error) =>
                   Container(color: Colors.grey.shade800),
               width: double.maxFinite,
               fit: BoxFit.cover,
